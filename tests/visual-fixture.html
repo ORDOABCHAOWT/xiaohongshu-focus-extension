@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Xiaohongshu Focus Visual Fixture</title>
+    <link rel="apple-touch-icon" href="../assets/xhs-icon.png">
+  </head>
+  <body>
+    <script>
+      globalThis.XHSFocusCore = {
+        extractFavoritesProfileUrl: () => "https://www.xiaohongshu.com/user/profile/example-account?tab=fav&subTab=note",
+        shouldShowFocusPage: function () {
+          return true;
+        },
+        buildSearchUrl: function (query) {
+          var keyword = String(query || "").trim();
+          if (!keyword) return null;
+          var url = new URL("https://www.xiaohongshu.com/search_result");
+          url.searchParams.set("keyword", keyword);
+          url.searchParams.set("source", "web_explore_feed");
+          return url;
+        },
+        pickPreferredIconHref: function () {
+          return "../assets/xhs-icon.png";
+        }
+      };
+
+      globalThis.chrome = {
+        runtime: {
+          getURL: function (path) {
+            return "../" + path;
+          }
+        }
+      };
+    </script>
+    <script src="../src/content-script.js?v=xhs-soft-flow"></script>
+  </body>
+</html>

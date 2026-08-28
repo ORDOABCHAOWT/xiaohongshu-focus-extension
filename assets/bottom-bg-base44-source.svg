@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3840" height="1500" viewBox="0 0 3840 1500" role="img" aria-label="Xiaohongshu style soft bottom mist">
+  <defs>
+    <linearGradient id="baseWash" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0.18" stop-color="#ffffff" stop-opacity="0.72"/>
+      <stop offset="0.4" stop-color="#fff7f8" stop-opacity="0.96"/>
+      <stop offset="0.64" stop-color="#ffe7df"/>
+      <stop offset="0.82" stop-color="#ffd7c0"/>
+      <stop offset="1" stop-color="#ffc494"/>
+    </linearGradient>
+
+    <radialGradient id="leftMist" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#ffd5da" stop-opacity="0.58"/>
+      <stop offset="0.48" stop-color="#ffc7c0" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#ffc7c0" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="rightMist" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#ff8c9a" stop-opacity="0.42"/>
+      <stop offset="0.54" stop-color="#ffc29b" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#ffc29b" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="centerLift" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.74"/>
+      <stop offset="0.46" stop-color="#fff1f4" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#fff1f4" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="mistBlur" x="-20%" y="-30%" width="140%" height="170%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="72"/>
+    </filter>
+  </defs>
+
+  <rect width="3840" height="1500" fill="url(#baseWash)"/>
+
+  <g filter="url(#mistBlur)">
+    <ellipse cx="720" cy="1110" rx="920" ry="360" fill="url(#leftMist)"/>
+    <ellipse cx="3100" cy="1116" rx="980" ry="380" fill="url(#rightMist)"/>
+    <ellipse cx="1920" cy="860" rx="1320" ry="360" fill="url(#centerLift)"/>
+    <ellipse cx="1920" cy="1280" rx="2260" ry="420" fill="#ffb37f" opacity="0.3"/>
+  </g>
+</svg>
