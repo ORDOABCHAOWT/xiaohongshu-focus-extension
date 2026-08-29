@@ -9,6 +9,26 @@
   <img src="https://img.shields.io/badge/License-MIT-FF5B74" alt="MIT License">
 </p>
 
+## 功能一览
+
+### 打开就是专注页
+
+推荐内容自动退场，只留下一个安静、清晰的搜索入口。
+
+<p align="center"><img src="docs/feature-focus.png" alt="隐藏推荐流后的专注搜索页" width="900"></p>
+
+### 想搜什么，直接输入
+
+输入主题后进入小红书原生搜索结果，不接管后续浏览体验。
+
+<p align="center"><img src="docs/feature-search.png" alt="在专注搜索框中输入日语学习" width="900"></p>
+
+### 账号入口仍在手边
+
+右上角保留当前账号入口，需要时可以快速回到自己的内容。
+
+<p align="center"><img src="docs/feature-profile.png" alt="专注页右上角的账号入口" width="900"></p>
+
 ## 它做什么
 
 - 只在小红书 `/explore` 页面显示一个安静的搜索入口。
